@@ -14,7 +14,7 @@ function multiply(userFirstNumber, userSecondNumber){
 }
 function divide(userFirstNumber, userSecondNumber){
     if(userSecondNumber == 0){
-        console.log('Division by 0 is not possible');
+        alert('Division by 0 is not possible');
     }
     else{
         console.log(`Divide ${userFirstNumber} / ${userSecondNumber} = ${userFirstNumber/userSecondNumber}`);
