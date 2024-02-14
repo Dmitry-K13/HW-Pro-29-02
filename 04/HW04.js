@@ -86,6 +86,19 @@ for(let i=0; i<existArr.length; i++){
 console.log(changedArr);
 
 
+// let arrMod = ['keep','keep','remove'];
 
+// function removeItem(value){
+//     let newItems = [];
+//     for(let i=0; i<value.length; i++){
+//         if(value[i] == 'keep'){
+//             newItems.push(value[i]);
+//         }
+//     }
+//     return newItems
+// }
+
+// let newArr = removeItem(arrMod)
+// console.log(newArr)
 
 
