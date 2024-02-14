@@ -4,15 +4,15 @@ for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
-const message = 'test';
+let message = 'test';
 function example() {
     if (true) {
-        const message = 'Hello, world!';
+        let message = 'Hello, world!';
         console.log(message);
     }
     console.log(message); // Виведе 'Hello, world!'
 }
-
+example();
 
 // Використовуючи for in  виведіть значення з обєктку в console.log
 const person = {
