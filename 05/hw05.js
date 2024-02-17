@@ -32,8 +32,9 @@ const students = [
     { name: 'Charlie', age: 21, grade: 'C' }
 ];
 for(let student of students){
+    console.log(students);
     for(let key in student){
-        console.log(`key: ${key}, value ${student[key]}`)
+        console.log(`value ${student[key]}`)
     }
 }
 
@@ -41,15 +42,22 @@ for(let student of students){
 // Завдання 1: Створіть масив чисел і використайте метод map, щоб створити новий масив, який містить квадрати кожного числа.
 const numberArr = [10,20,30];
 
-let doubleValue = (a)=>a*2;
-let squearArr = numberArr.map(doubleValue);
+let squearArr = numberArr.map(number=>number*number);
 console.log(squearArr)
 
 // Завдання 2: Напишіть функцію, яка приймає масив і функцію-перетворювач, і використовує map для створення нового масиву, в якому кожен елемент отримує  стрінг до значення 'new value'
 // ???
+function mapWithTransform(array, callback){
+    let newArr = array.map(item=>callback(item));
+    return newArr;
+}
 
-
-
+let newValueArr = mapWithTransform(numberArr, item=>`new value: ${item}`);
+console.log(newValueArr);
 
 // Напишіть функцію, яка використовує forEach для обчислення суми всіх елементів у масиві чисел. Масив наприклад const numberArr = [10,20,30]
 // ???
+numbersArr = [1,20,30];
+let summ = 0;
+numbersArr.forEach(number=> summ=summ+number);
+console.log(summ);
