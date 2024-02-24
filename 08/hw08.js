@@ -18,7 +18,7 @@ window.onload = function () {
         }
     ]
 
-    const table = document.querySelector('table');
+    let table = document.querySelector('table');
     table.style.marginBottom = '30px';
 
     let thead = document.querySelector('thead');
@@ -27,19 +27,19 @@ window.onload = function () {
 
 
     booksArray.forEach(book => {
-        const row = document.createElement('tr');
+        let row = document.createElement('tr');
         row.style.textAlign = 'center';
         row.style.backgroundColor = 'aqua';
         
-        const titleBook = document.createElement('td');
+        let titleBook = document.createElement('td');
         titleBook.textContent = book.title;
         row.appendChild(titleBook);
     
-        const yearBook = document.createElement('td');
+        let yearBook = document.createElement('td');
         yearBook.textContent = book.year;
         row.appendChild(yearBook);
     
-        const ratingBook = document.createElement('td');
+        let ratingBook = document.createElement('td');
         ratingBook.textContent = book.rating;
         row.appendChild(ratingBook);
     
