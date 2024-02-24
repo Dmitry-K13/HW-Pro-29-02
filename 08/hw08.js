@@ -80,7 +80,7 @@ window.onload = function () {
     divContainer.style.display = 'flex';
     document.body.appendChild(divContainer);
 
-    for(let i = 1; i<50; i++){
+    for(let i = 0; i<50; i++){
         let newDiv = document.createElement('div');
         newDiv.style.borderRadius = '10px';
         newDiv.style.height = '50px';
