@@ -44,13 +44,14 @@ window.onload = function(){
     let count = 0;
     let pEl = document.querySelector('.number');
     function clicker() {
-        if(count<10){
-            count+=1;
-            pEl.innerHTML = `Number of clicks: ${count}`;
+        count+=1;
+        pEl.innerHTML = `Number of clicks: ${count}`;
+
+        if(count>=10){
+            counterBtn.removeEventListener('click', clicker );
+            counterBtn.setAttribute('disabled','disabled');
+
         }
-        // else{
-        //     counterBtn.removeEventListener('click', clicker );
-        // }
     }
     counterBtn.addEventListener('click', clicker);
 
@@ -59,14 +60,23 @@ window.onload = function(){
 
     // 4. Створіть веб-сторінку з кнопкою та 10 елементами (наприклад, div). Підключіть обробник події onclick до кожного елементу. Коли користувач натисне на елемент,цей елемент має бути видалений зі сторінки
 
-    for(let i = 0; i<10; i++){
-        divEl = document.createElement('div');
-        divEl.innerText = i+1;
-        divEl.onclick= function(){
-            divEl.remove();
+    // for(let i = 0; i<10; i++){
+    //     divEl = document.createElement('div');
+    //     divEl.innerText = i+1;
+    //     divEl.onclick= function(){
+    //         divEl.remove();
     
-        }
-        document.body.appendChild(divEl);
-    }
+    //     }
+    //     document.body.appendChild(divEl);
+    // }
+    let [...allTask4Buttons] = document.querySelectorAll('.task4 button');
+    allTask4Buttons.forEach(button=>{
+        button.onclick = function(){
+            button.parentElement.remove();
+        } 
+    });
+
+
+
 }
 // НЕ РАБОТАЕТ.УДАЛЯЕТСЯ ТОЛЬКО ПОСЛЕДНИЙ ДИВ. ПОДСКАЖИТЕ КАК РЕШИТЬ ПРАВИЛЬНО.
