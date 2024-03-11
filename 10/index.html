@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="hw10.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        p {
+            margin: 0 auto;
+            width: 400px;
+            font-size: 20px;
+            margin-bottom: 150px;
+        }
+        .contextMenu{
+            display: none;
+            background-color: rgb(81, 78, 78);
+            width: 20%;
+            border-radius: 10px;
+            padding: 20px;
+            position: absolute;
+        }
+        .contextMenu a{
+            color: white;
+            text-decoration: none;
+
+        }
+        img{
+            display: block;
+            margin: 150px auto;
+        }
+        .field{
+            margin: 0px auto;
+            padding: 0;
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+
+        }
+        .object{
+            background-color: brown;
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 100%;
+            position: relative;
+
+        }
+        .task3{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius explicabo iste saepe placeat exercitationem
+            aperiam, quos quisquam iusto iure! Nam maxime ut iusto dolorum. Aperiam assumenda culpa incidunt consequuntur
+            vel?
+        </p>
+
+        <ul class="contextMenu">
+            <li class="positionRight"><a href="#">вирівняти по правому центру</a></li>
+            <li class="positionLeft"><a href="#">вирівняти по лівому краю</a></li>
+            <li class="positionHide"><a href="#">Приховати елемент</a></li>
+        </ul>
+    
+    </div>
+
+    <img src="img/avataaars1.png" alt="smilingGuy">
+
+    <div class="field">
+        <div class="object"></div>
+    </div>
+
+    <ul class="task3">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+
+</html>
