@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="hw12.js"></script>
+    <style>
+        body {
+            width: 30%;
+            margin: 30px auto;
+        }
+
+        .colorForm,
+        .hobby {
+            background-color: white;
+            padding: 10px;
+            border: 2px solid black;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between
+        }
+        .hobby{
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="colorForm">
+        <div>
+            <label for="grey">Grey</label>
+            <input type="radio" name="color" id="grey" value="grey">
+        </div>
+        <div>
+            <label for="aqua">Aqua</label>
+            <input type="radio" name="color" id="aqua" value="aqua">
+        </div>
+        <div>
+            <label for="red">Red</label>
+            <input type="radio" name="color" id="red" value="red">
+        </div>
+        <div>
+            <label for="green">Green</label>
+            <input type="radio" name="color" id="green" value="green">
+        </div>
+    </div>
+
+    <div class="hobby">
+        <div>
+            <input type="checkbox" name="hobbyEl" id="reading">
+            <label for="reading">Reading</label>
+
+            <input type="checkbox" name="hobbyEl" id="sport">
+            <label for="sport">Sport</label>
+
+            <input type="checkbox" name="hobbyEl" id="music">
+            <label for="music">Music</label>
+        </div>
+
+        <ul class="selectedHobby"></ul>
+    </div>
+
+    <div class="task3">
+        <select name="" id="country"></select>
+        <div class="container"></div>
+    </div>
+</body>
+
+</html>
